@@ -1,8 +1,8 @@
-package Question2;
+package Qno2;
 
 import java.util.*;
 
-public class SecretSharing {
+public class Secret {
     public static void main(String[] args) {
         int n = 5;
         int[][] intervals = {{0, 2}, {1, 3}, {2, 4}};

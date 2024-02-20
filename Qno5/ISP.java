@@ -1,9 +1,9 @@
-package Question5;
+package Qno5;
 
 
 import java.util.*;
 
-public class b {
+public class ISP {
 
     public static List<Integer> findNodesWithOnlyTargetAsParent(int[][] edges, int target) {
         Map<Integer, List<Integer>> graph = new HashMap<>();

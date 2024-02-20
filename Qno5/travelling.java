@@ -1,4 +1,4 @@
-package Question5;
+package Qno5;
 
 
 import java.util.Arrays;
@@ -137,7 +137,7 @@ class AntColony {
     }
 }
 
-public class a{
+public class travelling{
     public static void main(String[] args) {
         int[][] distanceMatrix = {
                 {0, 10, 15, 20},

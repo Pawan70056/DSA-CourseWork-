@@ -1,4 +1,4 @@
-package Question4;
+package Qno4;
 import java.util.*;
 class TreeNode {
     int val;
@@ -9,7 +9,7 @@ class TreeNode {
     }
 }
 
-public class BinarySearch {
+public class Binarytree {
     public static List<Integer> closestValues(TreeNode root, double target, int x) {
         List<Integer> result = new ArrayList<>();
         if (root == null || x == 0) return result;

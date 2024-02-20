@@ -1,4 +1,4 @@
-package Question6;
+package Qno6;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -20,13 +20,13 @@ import javax.swing.SwingUtilities;
  *
  * @author acer
  */
-public class Downloader extends javax.swing.JFrame {
+public class MultithreadedAsynchronousImageDownloader extends javax.swing.JFrame {
     
     private ExecutorService executorService;
     private static final String DOWNLOAD_DIRECTORY = "downloaded_file/";
     private List<Future<?>> downloadTasks;
     private Map<Future<?>, DownloadInfo> downloadInfoMap;
-    public Downloader() {
+    public MultithreadedAsynchronousImageDownloader() {
         initComponents();
         executorService = Executors.newFixedThreadPool(5);
         downloadTasks = new CopyOnWriteArrayList<>();
@@ -298,20 +298,20 @@ public class Downloader extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Downloader.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MultithreadedAsynchronousImageDownloader.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Downloader.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MultithreadedAsynchronousImageDownloader.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Downloader.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MultithreadedAsynchronousImageDownloader.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Downloader.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MultithreadedAsynchronousImageDownloader.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Downloader().setVisible(true);
+                new MultithreadedAsynchronousImageDownloader().setVisible(true);
             }
         });
     }

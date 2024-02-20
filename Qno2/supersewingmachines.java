@@ -1,8 +1,8 @@
-package Question2;
+package Qno2;
 
 import java.util.Scanner;
 
-public class Sewing{
+public class supersewingmachines{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

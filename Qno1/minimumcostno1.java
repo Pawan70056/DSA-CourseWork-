@@ -1,5 +1,5 @@
-package Question1;
-public class Cost {
+package Qno1;
+public class minimumcostno1 {
     public int minCost(int[][] costs) {
         if (costs == null || costs.length == 0)
             return 0;
@@ -31,7 +31,7 @@ public class Cost {
     }
 
     public static void main(String[] args) {
-        Cost resultCost = new Cost();
+        minimumcostno1 resultCost = new minimumcostno1();
         int[][] costs = { { 1, 3, 2 }, { 4, 6, 8 }, { 3, 1, 5 } };
         System.out.println("Minimum cost: " + resultCost.minCost(costs));
 

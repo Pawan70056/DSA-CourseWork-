@@ -1,6 +1,5 @@
-package Question3;
+package Qno3;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 class Edge implements Comparable<Edge> {
@@ -91,7 +90,7 @@ class Graph {
     }
 }
 
-public class lMST {
+public class Kruskal {
     public static void main(String[] args) {
         Graph graph = new Graph(4);
         graph.addEdge(0, 1, 10);

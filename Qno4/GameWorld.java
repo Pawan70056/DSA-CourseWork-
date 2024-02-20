@@ -1,8 +1,8 @@
-package Question4;
+package Qno4;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class VirtualGame {
+public class GameWorld {
 
     public static int minimumStepsToCollectKeys(String[] map) {
         int rows = map.length;

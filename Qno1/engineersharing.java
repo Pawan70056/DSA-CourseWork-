@@ -1,7 +1,7 @@
-package Question1;
+package Qno1;
 import java.util.PriorityQueue;
 
-public class Building {
+public class engineersharing {
     
 
     public static int minBuildTime(int[] engines, int splitTime) {

@@ -1,13 +1,13 @@
-package Question3;
+package Qno3;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ScoreTracker {
+public class Tracker {
     private List<Double> scores;
 
-    public ScoreTracker() {
+    public Tracker() {
         scores = new ArrayList<>();
     }
 
@@ -30,7 +30,7 @@ public class ScoreTracker {
     }
 
     public static void main(String[] args) {
-        ScoreTracker scoreTracker = new ScoreTracker();
+        Tracker scoreTracker = new Tracker();
         scoreTracker.addScore(85.5); // Stream: [85.5]
         scoreTracker.addScore(92.3); // Stream: [85.5, 92.3]
         scoreTracker.addScore(77.8); // Stream: [85.5, 92.3, 77.8]
